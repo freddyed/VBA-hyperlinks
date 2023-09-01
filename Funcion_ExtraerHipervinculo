@@ -1,0 +1,5 @@
+Function ExtraerHipervinculo(celda As Range) As String
+  On Error Resume Next
+  ExtraerHipervinculo = celda.Hyperlinks(1).Address
+  On Error GoTo 0 
+End Function
